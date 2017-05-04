@@ -1,0 +1,1 @@
+$(document).ready(function(){function a(a){var n=a.data("animation");a.removeClass("transparent").addClass("opaque").addClass(n)}var n=new Array,t=0;for($(".animate-waypoint").each(function(){n[t]=$(this),t++}),t=0;t<n.length;t++){var o=n[t];o.waypoint({handler:function(n){"down"==n&&a($(this))},offset:"bottom-in-view"})}});

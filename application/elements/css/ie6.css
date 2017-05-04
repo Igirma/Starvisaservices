@@ -1,0 +1,16 @@
+.contact_left input, .contact_right input{
+	height:23px;
+	padding-top: 9px;
+}
+#suggest1, .category_select, .order_left input, .order_right input{
+	height:23px;
+	padding-top: 9px;
+}
+#address{
+	height:22px;
+	padding-top: 8px;
+}
+body{position:relative;}
+#menu{position:relative;z-index:2;}
+#content_wrapper{position:relative;z-index:1;}
+

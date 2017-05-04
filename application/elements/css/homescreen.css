@@ -1,0 +1,567 @@
+.homescreen-wrapper {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  display: block;
+  position: relative;
+}
+
+.homescreen-wrapper .footer {
+  width: 100%;
+  position: absolute;
+  bottom: 35px;
+  left: 0;
+}
+
+.homescreen {
+  font-size: 20px;
+  font-family: 'nexa_lightregular';
+  color: #222;
+  width: 740px;
+  height: 400px;
+  margin: 0 auto;
+  display: block;
+  position: static;
+}
+
+.homescreen .relative {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 50px;
+  display: block;
+}
+
+.homescreen .image {
+  width: 72px;
+  position: absolute;
+  left: 16.5%;
+  top: 35%;
+  z-index: 10;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.homescreen .image img {
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+}
+
+.homescreen .lines,
+.bubbles {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.bubbles {
+  z-index: 0;
+}
+
+.homescreen .line,
+.homescreen .line .square {
+  display: block;
+  position: absolute;
+  z-index: 40;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.homescreen .line .square {
+  width: 5px;
+  height: 5px;
+  border: 1px #999 solid;
+}
+
+.homescreen .line.vertical {
+  width: 20px;
+  height: 60%;
+  border-left: 1px #999 dashed;
+}
+
+.homescreen .line.horizontal {
+  height: 20px;
+  border-top: 1px #999 dashed;
+  z-index: 50;
+}
+
+.homescreen .line.horizontal.long {
+  width: 61%;
+}
+
+.homescreen .line.horizontal.short {
+  width: 34%;
+}
+
+.homescreen .line.vertical.first {
+  left: 16%;
+  top: 22%;
+  height: 80%;
+}
+
+.homescreen .line.vertical.second {
+  left: 26.5%;
+  top: 27%;
+}
+
+.homescreen .line.vertical.third {
+  left: 49%;
+  top: 40%;
+}
+
+.homescreen .line.horizontal.first {
+  left: 16%;
+  top: 62%;
+}
+
+.homescreen .line.horizontal.second {
+  left: 16%;
+  top: 72%;
+}
+
+.homescreen .line.horizontal.third {
+  left: 38%;
+  top: 75%;
+}
+
+.homescreen .line.horizontal.forth {
+  left: 38%;
+  top: 83%;
+}
+
+.homescreen .line.vertical .square.left,
+.homescreen .line.vertical .square.right {
+  left: -3px;
+}
+
+.homescreen .line.vertical .square.left {
+  top: -3px;
+}
+
+.homescreen .line.vertical .square.right {
+  bottom: -3px;
+}
+
+.homescreen .line.horizontal .square.left,
+.homescreen .line.horizontal .square.right {
+  top: -3px;
+}
+
+.homescreen .line.horizontal .square.left {
+  left: -3px;
+}
+
+.homescreen .line.horizontal .square.right {
+  right: -3px;
+}
+
+.homescreen .title {
+  position: absolute;
+  z-index: 6;
+  text-transform: uppercase;
+  line-height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.homescreen .title.big {
+  font-family: 'nexa_boldregular';
+  font-size: 199%;
+  color: #222;
+  left: 17%;
+  top: 63%;
+}
+
+.homescreen .title.small {
+  font-size: 130%;
+  color: #0daaa7;
+  left: 41%;
+  top: 76.5%;
+}
+
+.bubbles .group {
+  position: absolute;
+}
+
+.bubbles .group .relative {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: block;
+  left: 0;
+  top: 0;
+}
+
+.bubbles .group.first {
+  left: 3%;
+  top: 60%;
+  width: 27%;
+  height: 50%;
+}
+
+.bubbles .group.second {
+  right: 6%;
+  bottom: 10%;
+  width: 46%;
+  height: 80%;
+}
+
+.bubbles .circle {
+  border-radius: 50%;
+  position: absolute;
+  background-color: #f0f0f0;
+  display: block;
+  z-index: 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.bubbles .dark {
+  background-color: #c0c0c0;
+}
+
+.bubbles .green:hover {
+  background-color: #0daaa7;
+  opacity: .5;
+}
+
+.group.first .circle.size-a {
+  height: 7%;
+  width: 7%;
+}
+
+.group.first .circle.size-b {
+  height: 10%;
+  width: 10%;
+}
+
+.group.first .circle.size-c {
+  height: 21%;
+  width: 21%;
+}
+
+.group.first .circle.size-d {
+  height: 32%;
+  width: 32%;
+}
+
+.group.first .circle.size-e {
+  height: 30%;
+  width: 30%;
+}
+
+.group.first .circle.item-1 {
+  left: 14%;
+  top: 0;
+}
+
+.group.first .circle.item-2 {
+  left: 10%;
+  top: 4%;
+}
+
+.group.first .circle.item-3 {
+  left: 6%;
+  top: 10%;
+}
+
+.group.first .circle.item-4 {
+  left: 0;
+  top: 24%;
+}
+
+.group.first .circle.item-5 {
+  left: 17%;
+  top: 38%;
+  z-index: 2;
+}
+
+.group.first .circle.item-6 {
+  left: 37%;
+  top: 43%;
+  z-index: 1;
+}
+
+.group.first .circle.item-7 {
+  left: 62%;
+  top: 42%;
+}
+
+.group.second .circle.size-a {
+  height: 9%;
+  width: 9%;
+}
+
+.group.second .circle.size-b {
+  height: 15%;
+  width: 15%;
+}
+
+.group.second .circle.size-c {
+  height: 27%;
+  width: 27%;
+}
+
+.group.second .circle.size-d {
+  height: 26%;
+  width: 26%;
+}
+
+.group.second .circle.size-e {
+  height: 20%;
+  width: 20%;
+}
+
+.group.second .circle.size-f {
+  height: 48%;
+  width: 48%;
+}
+
+.group.second .circle.size-g {
+  height: 12%;
+  width: 12%;
+}
+
+.group.second .circle.size-h {
+  height: 24%;
+  width: 24%;
+}
+
+.group.second .circle.size-i {
+  height: 40%;
+  width: 40%;
+}
+
+.group.second .circle.size-j {
+  height: 20%;
+  width: 20%;
+}
+
+.group.second .circle.size-k {
+  height: 10%;
+  width: 10%;
+}
+
+.group.second .circle.size-l {
+  height: 12%;
+  width: 12%;
+}
+
+.group.second .circle.size-m {
+  height: 7%;
+  width: 7%;
+}
+
+.group.second .circle.item-1 {
+  left: 4%;
+  top: 38%;
+}
+
+.group.second .circle.item-2 {
+  left: 8%;
+  top: 39%;
+}
+
+.group.second .circle.item-3 {
+  left: 18%;
+  top: 30%;
+  z-index: 2;
+}
+
+.group.second .circle.item-4 {
+  left: 25%;
+  top: 20%;
+  z-index: 1;
+}
+
+.group.second .circle.item-5 {
+  left: 40%;
+  top: 11%;
+  z-index: 2;
+}
+
+.group.second .circle.item-6 {
+  left: 35%;
+  top: 19%;
+  z-index: 0;
+}
+
+.group.second .circle.item-7 {
+  left: 73%;
+  top: 34%;
+  z-index: 1;
+}
+
+.group.second .circle.item-8 {
+  left: 68%;
+  top: 48%;
+}
+
+.group.second .circle.item-9 {
+  left: 84%;
+  top: 66%;
+}
+
+.group.second .circle.item-10 {
+  left: 66%;
+  top: 66%;
+}
+
+.group.second .circle.item-11 {
+  left: 62%;
+  top: 76%;
+  cursor: pointer;
+}
+
+.group.second .circle.item-12 {
+  left: 47%;
+  top: 92%;
+}
+
+.group.second .circle.item-13 {
+  left: 36%;
+  top: 100%;
+}
+
+.group.second .circle.item-14 {
+  left: 39%;
+  top: 96%;
+}
+
+.group.second .circle.item-15 {
+  left: 30%;
+  top: 98%;
+}
+
+.group.second .circle.item-16 {
+  left: 24%;
+  top: 100%;
+  z-index: 1;
+}
+
+.group.second .circle.item-17 {
+  left: 20%;
+  top: 100%;
+}
+
+.circle.next {
+  text-align: center;
+}
+
+.circle.next .cell,
+.circle.next .tbl {
+  height: 100%;
+  width: 100%;
+}
+
+.circle.next .entypo {
+  position: relative;
+  font-size: 80px;
+  color: #088475;
+  opacity: .4;
+}
+
+.circle.next:hover .entypo {
+  color: #fff;
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .homescreen,
+  .top-menu {
+    width: 100%;
+    position: relative;
+    clear: both;
+  }
+
+  .homescreen .image {
+    width: 10%;
+  }
+
+  .homepage-header {
+    height: 354px;
+    width: 100%;
+    clear: both;
+  }
+
+  .homepage-header .wrap {
+    margin-top: -40px;
+  }
+
+  .desktop-menu a, 
+  .desktop-menu a:visited {
+    margin: 0;
+    font-family: 'nexa_lightregular';
+  }
+  
+  .homescreen-wrapper .footer {
+    position: relative;
+    margin-top: 220px;
+    clear: both;
+  }
+  
+  .circle.next .entypo {
+    font-size: 60px;
+    top: 10px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .homescreen .title.big {
+    font-size: 32px;
+    top: 64%;
+  }
+
+  .homescreen .title.small {
+    font-size: 20px;
+    top: 81%;
+  }
+
+  .homescreen-wrapper .footer {
+    font-size: 70%;
+  }
+  
+  .homescreen .line.horizontal.second {
+    top: 74%;
+  }
+  
+  .homescreen .line.horizontal.third {
+    top: 78%;
+  }
+  
+  .homescreen .line.horizontal.forth {
+    top: 88%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .homescreen .title.big {
+    font-size: 26px;
+  }
+
+  .homescreen .title.small {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .homescreen .title.big {
+    font-size: 19px;
+  }
+
+  .homescreen .title.small {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-height: 360px) {
+  .homescreen .relative {
+    top: -50px;
+  }
+}

@@ -1,0 +1,285 @@
+.anim_short_duration {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+}
+
+.shake_eff {
+  -webkit-animation-name: shake_eff;
+  animation-name: shake_eff;
+}
+
+.fadeIn_eff {
+  -webkit-animation-name: fadeIn_eff;
+  animation-name: fadeIn_eff;
+}
+
+.flipInX {
+  -webkit-backface-visibility: visible !important;
+  -webkit-animation-name: flipInX;
+  backface-visibility: visible !important;
+  animation-name: flipInX;
+}
+
+.typing_big {
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  border-right: 3px solid black;
+  -webkit-animation: typing 0.6s steps(6, end), blink-caret 0.3s step-end 0.6s;
+  -moz-animation: typing 0.6s steps(6, end), blink-caret 0.3s step-end 0.6s;
+}
+
+.typing_big_borderless {
+  border-right: 0;
+}
+
+.contact-page,
+.contact-page .tbl,
+.contact-page .cell {
+  height: 100%;
+  width: 100%;
+}
+
+.contact-page {
+  display: block;
+}
+
+.messaging {
+  width: 350px;
+  margin: 0 auto;
+  color: #2b2b2b;
+}
+
+.messaging h3,
+.messaging h4 {
+  margin: 0;
+  font-weight: normal;
+}
+
+.messaging h3 {
+  font-size: 62px;
+  line-height: 62px;
+}
+
+.messaging h4 {
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.messaging header {
+  margin: 0 0 13px;
+}
+
+.messaging .message,
+.messaging .message .text {
+  display: block;
+  clear: both;
+  position: relative;
+}
+
+.messaging .message .text {
+  font-size: 15px;
+}
+
+.messaging .message {
+  margin: 22px 0;
+  padding: 22px 32px;
+  font-family: 'nexa_boldregular';
+  line-height: 32px;
+}
+
+.messaging .message .user {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: -16px;
+  border-radius: 50%;
+  background: #fff;
+  border: 1px #a6a6a6 solid;
+  color: #2b2b2b;
+  font-size: 11px;
+  text-align: center;
+  font-family: 'nexa_boldregular';
+}
+
+.messaging .message.odd .user {
+  left: -16px;
+}
+
+.messaging .message.even .user {
+  right: -16px;
+}
+
+.messaging .message p,
+.messaging .message ul,
+.messaging .message ul li {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  line-height: 24px;
+}
+
+.messaging .message ul {
+  margin-top: 10px;
+}
+
+.messaging .message .text.big {
+  font-size: 51px;
+  line-height: 51px;
+  margin-bottom: -5px;
+}
+
+.messaging input[type="text"] {
+  width: 100%;
+  background: none;
+  border: 0;
+  font-family: 'nexa_lightregular';
+  -webkit-box-shadow: 0 0 0;
+  box-shadow: 0 0 0;
+  font-size: 15px;
+}
+
+.autocomplete-suggestions {
+  border: 1px solid #088475;
+  background: #fff;
+  cursor: default;
+  overflow: auto;
+  font-size: 16px;
+}
+
+.autocomplete-suggestion {
+  padding: 5px 10px;
+  font-size: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.autocomplete-selected {
+  background: #9edddc;
+}
+
+.autocomplete-suggestions strong {
+  font-weight: normal;
+  color: #088475;
+  font-family: 'nexa_boldregular';
+}
+
+.contact-option {
+  color: #2b2b2b;
+}
+
+.contact-option .icon,
+.contact-option .title,
+.contact-option .subtitle,
+.contact-option .other {
+  font-size: 46px;
+  line-height: 46px;
+}
+
+.contact-form .form-control {
+  border-radius: 0;
+  background: #f6f6f6;
+  border-color: #f6f6f6;
+}
+
+.contact-form textarea.form-control {
+  height: 150px;
+}
+
+.contact-form button {
+  background: none !important;
+  color: #14aaa9;
+  border: 0 !important;
+  box-shadow: 0 0 0;
+  padding: 0;
+  font-size: 100%;
+  font-family: 'nexa_boldregular';
+}
+
+label.error {
+  font-weight: normal;
+  font-size: 12px;
+  color: red;
+}
+
+.footer-menu {
+  position: absolute;
+  bottom: 35px;
+  left: 0;
+  width: 100%;
+}
+
+.footer-menu .pages-menu {
+  margin: auto;
+  text-align: center;
+}
+
+.footer-menu .pages-menu a {
+  height: 38px;
+  width: 38px;
+  line-height: 38px;
+  font-size: 20px;
+  position: relative;
+}
+
+.footer-menu .pages-menu a i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -10px 0 0 -10px;
+  line-height: 20px;
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  body.contact {
+    overflow-x: hidden !important;
+  }
+  
+  .contact-page {
+    width: 96%;
+    margin: 0 2%;
+    clear: both;
+    float: left;
+  }
+
+  .contact-page,
+  .contact-page .tbl,
+  .contact-page .cell {
+    height: auto;
+  }
+  
+  .contact-option {
+    width: 100%;
+  }
+  
+  .contact-page {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .messaging {
+    width: 100%;
+  }
+  
+  .contact-option .icon, 
+  .contact-option .title, 
+  .contact-option .subtitle, 
+  .contact-option .other {
+    font-size: 22px;
+    line-height: 22px;
+  }
+  
+  .footer-menu {
+    position: relative;
+    width: 100%;
+    float: left;
+    clear: both;
+  }
+}
